@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="name">
+        <h1><i>CALCULATOR USING HTML, CSS AND JAVASCRIPT</i></h2>
+    </div>
+        <div class="container">
+        <div class="calculator">
+            <div class="input">
+                <input type="text" id="result">
+            </div>
+
+            <div class="btn-section">
+                <div class="btn"><button class="c" onclick="clearResult()">C</button></div>
+
+                <div class="btn"><button onclick="Operator('/')">/</button></div>
+                <div class="btn"><button onclick="Operator('*')">*</button></div>
+                <div class="btn"><button onclick="Operator('-')">-</button></div>
+
+                <div class="btn"><button onclick="Digit(7)">7</button></div>
+                <div class="btn"><button onclick="Digit(8)">8</button></div>
+                <div class="btn"><button onclick="Digit(9)">9</button></div>
+
+                <div class="btn" id="plus"><button class="plus-btn" onclick="Operator('+')">+</button></div>
+
+                <div class="btn"><button onclick="Digit(4)">4</button></div>
+                <div class="btn"><button onclick="Digit(5)">5</button></div>
+                <div class="btn"><button onclick="Digit(6)">6</button></div>
+                <div class="btn"><button onclick="Digit(1)">1</button></div>
+                <div class="btn"><button onclick="Digit(2)">2</button></div>
+                <div class="btn"><button onclick="Digit(3)">3</button></div>
+
+                <div class="btn" id="enter"><button class="enter-btn" onclick="calculate()">Enter</button></div>
+
+                <div class="btn" id="zero"><button class="zero-btn" onclick="Digit(0)">0</button></div>
+
+                <div class="btn"><button onclick="Operator('.')">.</button></div>
+                
+            </div>
+
+        </div>
+
+        <div class="history">
+            <h3>History:</h3>
+            <ul id="calcHistory"><hr></ul>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+
+</html>
